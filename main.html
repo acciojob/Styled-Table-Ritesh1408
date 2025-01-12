@@ -1,15 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- add table here -->
+    <title>Data Table</title>
+    <style>
+        /* General table styling */
+        table {
+            background-color: white;
+            text-align: left;
+            margin: 20px auto; /* Center table */
+            width: 80%;
+            border-collapse: collapse;
+            border-radius: 15px;
+            overflow: hidden; /* Rounded corners with border-collapse fix */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-        
+        /* Table header styling */
+        table > thead {
+            background-color: darkblue;
+            color: white;
+        }
+
+        table > thead th {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* Table body styling */
+        table > tbody td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* Even rows styling */
+        table > tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Odd rows styling */
+        table > tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        /* Hover effect */
+        table > tbody tr:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phy</th>
+                <th>Chem</th>
+                <th>Math</th>
+                <th>Eng</th>
+                <th>CS</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>45</td>
+                <td>50</td>
+                <td>40</td>
+                <td>70</td>
+                <td>80</td>
+                <td>285</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>55</td>
+                <td>60</td>
+                <td>50</td>
+                <td>65</td>
+                <td>75</td>
+                <td>305</td>
+            </tr>
+            <tr>
+                <td>Sam</td>
+                <td>65</td>
+                <td>55</td>
+                <td>60</td>
+                <td>75</td>
+                <td>85</td>
+                <td>340</td>
+            </tr>
+            <tr>
+                <td>Sai</td>
+                <td>50</td>
+                <td>45</td>
+                <td>55</td>
+                <td>60</td>
+                <td>70</td>
+                <td>280</td>
+            </tr>
+            <tr>
+                <td>Karin</td>
+                <td>70</td>
+                <td>65</td>
+                <td>75</td>
+                <td>80</td>
+                <td>90</td>
+                <td>380</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
+
 </html>
